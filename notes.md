@@ -90,3 +90,42 @@ Q6. CONSIDER A SCENARIO FOR A SMALL ONLINE BOOKSTORE:-
     BOOK ID, TITLE, AUTHOR, PRICE, QUANTITY.
     CUSTOMER ID, NAME, EMAIL, ADDRESS
     (2 TABLE)).
+
+
+# Like operator
+
+The LIKE operator in SQL is used for pattern matching within text data. It allows you to find records where a specific column's value matches a given pattern.
+
+## starting from 
+
+'A%' 
+The % symbol is a wildcard used in the LIKE operator to represent zero, one, or multiple characters in a search pattern.
+
+## ending with 
+
+'%dey'
+
+## contains 
+
+'%yuv%'
+
+## contians in second place 
+
+'_a%'
+
+## contains 5 letters and second placr
+
+'_a___'
+
+
+ex:-
+```sql
+SELECT * FROM employee WHERE e_name LIKE 'J%';
+
+
+--output
+/*
+1|John Doe|123 Main St
+2|Jane Smith|456 Oak Ave
+*/
+```

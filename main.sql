@@ -23,5 +23,4 @@ VALUES
     (102, 'Finance', 2),
     (103, 'Engineering', 3);
 
-SELECT * FROM Employee;
-SELECT * FROM Department;
+SELECT * FROM employee WHERE e_name LIKE 'J%';
